@@ -1,0 +1,154 @@
+*{
+   margin: 0%;
+   padding:0%;
+}
+
+.navbar{
+        height: 70px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        background-color: rgba(0,0,0,0.5);
+        position: relative;
+        z-index:100;
+}
+
+ .navbar .logo{
+        font-size: 25px;
+        font-weight: bold;
+        background-color: blue;
+        color: white;
+
+        
+}
+.navbar .menu{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 300px;
+       
+
+
+}
+ul{
+        list-style: none;
+        font-size:20px;
+
+}
+a{
+        text-decoration: none;
+        margin: 10px;
+        margin-left:50px;
+        color: #fff;
+}
+.search{
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 220px;
+        background-color: lightgray;
+        
+
+}
+.search .img{
+        height:20px;
+        width: 20px;
+        background-color: #fff;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+
+}
+.search .input{
+        height: 20px;
+         border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+}
+.content{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+}
+.content .imo{
+        width: 100%;
+        height: 100%;
+        object-fit:over;
+}
+.content .wrt{
+        position: absolute;
+        top:15%;
+        left: 50%;
+        width: 1140px;
+        max-width: 80%;
+        transform: translate(-50%);
+        color: #fff;
+        box-sizing: border-box;
+
+}
+ .content .wrt h1{
+        height:90px;
+
+ }
+  .content .wrt .p1{
+        height:70px;
+        color:yellow;
+        font-size: 20px;
+  }
+ .content .wrt .p2{
+        font-size: px;
+        font-family: Arial;
+        font-weight: bold;
+
+ }
+  .content .wrt .btn2{
+        margin-top: 20px;
+        background-color:white;
+        height: 35px;
+        width: 150px;
+        border-radius: 20px;
+        display: inline-block;
+        font-size:15px;
+        font-family: Arial;
+        font-weight: bold;
+        border:none
+
+
+
+  }  
+  .content .wrt .btn1{
+        margin-top: 20px;
+        height: 35px;
+        width: 150px;
+        border-radius: 20px;
+        margin-right: 10px;
+        background-color: yellow;
+        font-size:15px;
+        font-family: Arial;
+        font-weight: bold;
+        border: none;
+
+
+
+  } 
+  .content .wrt .btn1:hover{
+        opacity: 0.7;
+        box-shadow:0.5px;
+  }
+  .content .wrt .btn2:hover{
+        opacity: 0.7;
+        box-shadow:0.5px;
+  }
+
+  .vedio-box{
+        height: 140px;
+        width: 250px;
+        border-radius: 10px;
+        border:5px solid#ffcc00;
+        margin-top:100px;
+        box-shadow:0 0 15px rgba(0,0,0,0.685);
+ }
+ .vedio-box video{
+        height: 140px;
+        width: 250px;
+ }
