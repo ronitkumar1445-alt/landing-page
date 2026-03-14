@@ -62,8 +62,10 @@ a{
 }
 .search .input{
         height: 20px;
-         border-top-right-radius: 10px;
+        border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        border: none;
+        
 }
 .content{
         height: 100vh;
@@ -152,3 +154,80 @@ a{
         height: 140px;
         width: 250px;
  }
+ .thumbnail{
+        position:absolute;
+        bottom:50px;
+        left: 40%;
+        width:max-content;
+        z-index:100;
+        display: flex;
+        gap:20px;
+        backdrop-filter:blur(10px);
+
+ }
+ .thumbnail .item{
+        width: 150px;
+        height: 220px;
+        flex-shrink: 0;
+        position:relative;
+ }
+  .thumbnail .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+        mix-blend-mode: lighten;
+  }
+  .thumbnail .item .title{
+        position: absolute;
+        bottom: 10px;
+        left: 40px;
+        color: #fff;
+  }
+.arrows{  
+        position:absolute;
+        bottom:80px;
+        left: -11%;
+        z-index: 100;
+        
+}
+.arrows .prev{
+        background-color: lightgray;
+        height:33px;
+        width:33px;
+        border-radius: 50%;
+        border:none;
+        font: size 15px;
+        font-weight: bold;
+}
+.arrows .next{
+        background-color: lightgray;
+        height:33px;
+        width:33px;
+        border-radius: 50%;
+        border:none;
+        font: size 15px;
+        font-weight: bold;
+}
+.arrows button:hover{
+        background-color: #fff;
+        box-shadow: 0 0 15px(0,0,0.612);
+}
+/*ANIMATION*/
+.content .list .item:nth-child(1){
+        z-index: 1;
+}
+/*ANIMATION FOR CONTENT*/
+.content  .list .item:nth-child(1) .content{
+        filter: blur(20PX);
+        opacity: 0;
+        animation:showContent .5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+        to{
+                filter: blur(0);
+                opacity: 1;
+        }
+}
+
+
